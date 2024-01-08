@@ -1,0 +1,60 @@
+/* This is a CSS file for the FAQ accordion project */
+
+/* Global styles */
+body {
+    background: url(/assets/images/background-pattern-desktop.svg) no-repeat;
+    background-color: hsl(294, 54%, 90%);
+    display: grid;
+    grid-template-rows: 1fr auto;
+    place-items: center; /* keeps it in a nice card that isnt taking up the whole screen */
+    min-height: 100vh; /* centers it between the top image and the background color */
+    font-family: 'Work Sans', sans-serif; /* applies the font to all elements */
+    background-position: top right top left;
+    /*background-size: 100% 100%;*/
+  }
+  
+  /* Container styles */
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    width: 80%;
+    background-color: #fff;
+    padding: 35px;
+    border-radius: 10px;
+  }
+  
+  /* Header styles */
+  .header {
+    text-align: center;
+    display: flex; /* aligned the star and the FAQS side by side */
+    gap: 20px; /* puts a space between the stat and FAQS */
+  }
+  
+  .header h1 {
+    font-weight: 900;
+  }
+  
+  /* Questions styles */
+  .questions {
+    justify-content: space-between; /* pushes the  + and minus futher apart */
+    display: flex;
+    align-items: center;
+  }
+  
+  .questions h4 {
+    font-weight: 600;
+  }
+  
+  /* Paragraph styles */
+  .container p {
+    font-size: 16px;
+    color: hsl(292, 42%, 14%);
+  }
+  
+  /* Hidden and minus styles */
+  .hidden, .minus {
+    display: none;
+    /* plus symbols aligned nicley after aplying hidden to the css */
+  }
+  
